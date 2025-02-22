@@ -14,7 +14,7 @@ A simple web application where users can enter their email, select a language an
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/JoaoBett/dictonary_learning.git
+   git clone https://github.com/JoaoBett/Vocabulary-Learner.git
    cd vocabulary-learner
    ```
    
