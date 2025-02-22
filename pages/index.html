@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vocabulary Learner</title>
+    <meta name="author" content="JoaoBett" />
+    
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/assets/javascript/main.js"></script>
+  </head>
+
+  <body class="min-h-screen overflow-x-hidden text-gray-900 antialiased">
+    <div class="min-h-screen flex flex-col items-center justify-center px-4 py-12">
+      <div class="w-full max-w-4xl text-center space-y-8">
+        <div class="space-y-4 animate-fadeUpIn">
+          <h1 class="text-4xl md:text-5xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#1e90ff] to-[#99badd]/70">
+            Vocabulary Learner
+          </h1>
+          <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+            Enter your email and the language you want to learn!
+          </p>
+        </div>
+        
+        <div class="flex justify-center w-full">
+          <form id="landingForm" class="w-full max-w-md space-y-4">
+            <div class="space-y-2 animate-fadeUpIn delay-200">
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                class="h-12 px-4 w-full rounded-md border-2 border-gray-200 bg-white/80 backdrop-blur-sm focus:border-[#9f7aea]/50 focus:outline-none"
+                required
+              />
+            </div>
+
+            <div class="space-y-2 animate-fadeUpIn delay-400">
+              <select
+                id="language"
+                class="h-12 px-4 w-full rounded-md border-2 border-gray-200 bg-white/80 backdrop-blur-sm focus:border-[#9f7aea]/50 focus:outline-none"
+                required
+              >
+                <option value="">Select your language</option>
+                <option value="en">English</option>
+              </select>
+            </div>
+
+            <button
+              type="submit"
+              id="subButton"
+              class="w-full h-12 font-medium bg-gradient-to-r from-[#99badd] to-[#1e90ff] hover:bg-[#9f7aea]/90 text-white rounded-md transition-colors animate-fadeUpIn delay-400"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="toast" role="alert"></div>
+    <footer>
+        <div style="position: fixed; bottom: 5px; right: 5px; font-size: 10px; opacity: 0.6; display: flex; align-items: center; gap: 5px;">
+            <img src="/assets/images/github_icon.png" alt="GitHub Icon" style="width: 12px; height: auto;">
+            <a href="https://github.com/JoaoBett" style="text-decoration: none; color: gray;">Github</a>
+        </div>
+    </footer>
+  </body>
+</html>
